@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/bootstrap.min.css" />
+    <title>Age Checker</title>
+    <style>
+      .cont {
+        max-width: 500px;
+        width: 100%;
+        padding: 20px;
+      }
+
+      p {
+        font-size: 22px;
+        color: currentColor;
+        background-color: white;
+        border-radius: 10px;
+        padding: 20px;
+        border: 2px dashed black;
+        height: 25vh;
+      }
+    </style>
+  </head>
+  <body class="bg-light">
+    <h1 class="fs-1 text-center text-dark py-3">Age Checker</h1>
+    <div class="cont">
+      <div class="col-auto">
+        <label class="form-label text-dark fs-5">Enter your age: </label>
+        <input id="ageInput" class="form-control" type="number" />
+        <button id="CheckButton" class="btn btn-primary my-3">
+          Check Eligibility
+        </button>
+      </div>
+
+      <h1>Results:</h1>
+      <p id="Results"></p>
+    </div>
+
+    <!-- Linking JS -->
+    <script src="script.js"></script>
+  </body>
+</html>
